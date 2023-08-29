@@ -1,0 +1,7 @@
+set size square;
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+splot [-1600:1600] [-1600:1600] [-600:1600] "links.dat" using 1:2:3:4:5:6 with vectors head filled lt rgbcolor "blue","links.rot.dat" using 1:2:3:4:5:6 with vectors head filled lw 3;
+pause -1
+
